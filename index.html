@@ -10,22 +10,25 @@
     <title>Números primos</title>
 </head>
 <body style="background-color:rgb(250, 197, 136)">
-    <h1>
-        <font face="Comic Sans MS,arial,verdana" size=8 color="blue">
+   <div class="container"> <br><br>
+       <h1 class="text-center">
+        <font face="Comic Sans MS,arial,verdana" size=8 color="brown" >
             LOS NÚMEROS PRIMOS
         </font>
-    </h1>
+    </h1><br><br>
     <script>
         var s1= parseInt(prompt("¿cuántos números quieres probar?"));
         if (s1>=1){
-            document.write("<table>");
+            document.write("<table class='table table-hover'>");
             for(var i=1; i<=s1; i++){
                 if (esprimo(i)){
-                    document.write("<tr><td>"+i+"</td><td> es primo </td><tr>");        
+                    document.write("<tr class='text-center'><td>"+i+"</td><td> es primo </td><tr>");        
                 }
             }
                     document.write("</table>");
         }
-    </script>     
+    </script> 
+    </div> 
+    <center>Copyright &#169 2017 &#8211 <strong>Números Primos</strong> Vanessa Guzmán Valencia. Todos los derechos reservados</center>   
     </body>
     </html>
