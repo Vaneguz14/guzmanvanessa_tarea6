@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="primos.js"></script>
+
+    <title>Números primos</title>
+</head>
+<body style="background-color:rgb(250, 197, 136)">
+    <h1>
+        <font face="Comic Sans MS,arial,verdana" size=8 color="blue">
+            LOS NÚMEROS PRIMOS
+        </font>
+    </h1>
+    <script>
+        var s1= parseInt(prompt("¿cuántos números quieres probar?"));
+        if (s1>=1){
+            document.write("<table>");
+            for(var i=1; i<=s1; i++){
+                if (esprimo(i)){
+                    document.write("<tr><td>"+i+"</td><td> es primo </td><tr>");        
+                }
+            }
+                    document.write("</table>");
+        }
+    </script>     
+    </body>
+    </html>
